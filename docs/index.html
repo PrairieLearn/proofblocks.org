@@ -24,8 +24,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -54,37 +55,38 @@
 
 </head>
 <body>
+
   <div class="topnav">
-    <a href="./">Home</a>
-    <a href="./docs">Documentation</a>
-    <a href="./research">Research</a>
-    <a href="./publicity">Publicity</a>
-    <a href="./contact">Contact</a>
+    <a href="../">Home</a>
+    <a href="../docs">Documentation</a>
+    <a href="../research">Research</a>
+    <a href="../publicity">Publicity</a>
+    <a href="../contact">Contact</a>
   </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container" style="margin-top: 1%; margin-bottom: 5%">
-    <h1>Proof Blocks</h1>
-    <p>
-      Let students construct a proof by dragging and dropping, rather than starting from scratch.
-    </p>
-
-    <img style="max-width:100%;" src="./images/ProofBlocks-demo.gif"/>
-
-    <p>
-      Many students struggle to complete a mathametical proof, even when they have the required content knowledge.
-      Proof Blocks scaffolds students by presenting them with a set of lines which they must assemble into the
-      correct order. Problems are autograded based on the dependency graph of the proof, allowing students to recieve
-      instant feedback on their proof. Proof Blocks is not meant to replace writing proofs, but can be a step along
-      the way as students work toward mathematical maturity.
-    </p>
+    <h2>Proof Blocks &blacktriangleright; Documentation</h2>
 
     <!-- <h4>Demo</h4> -->
     <p>
-      <a href="https://www.prairielearn.org/pl/course/108/question/9063230/preview">
-        Try out Proof Blocks yourself on PrairieLearn
-      </a>.
+      Proof Blocks is integrated as a question element in <a href="https://www.prairielearn.org/">PrairieLearn</a>,
+      an online, problem driven learning system for creating homework and tests. </p>
+    <p>
+      You can <a href="https://www.prairielearn.org/pl/course/108/question/9063230/preview">
+        try out Proof Blocks yourself on PrairieLearn
+      </a> (requires login with Google or Microsoft).
+    </p>
+
+    <!-- <h4>Documentation</h4> -->
+    <h5>To use Proof Blocks in your course, see:</h5>
+
+      <ul>
+        <li>the <a href="https://prairielearn.readthedocs.io/en/latest/">PrairieLearn getting started documentation</a></li>
+        <li>the <a href="https://prairielearn.readthedocs.io/en/latest/elements/#pl-order-blocks-element">pl-order-blocks element documentation</a></li>
+        <li>the <a href="https://github.com/PrairieLearn/PrairieLearn/tree/master/exampleCourse/questions/demo/proofBlocks">Proof Blocks demo problem</a></li>
+      </ul>
     </p>
 
   </div>
