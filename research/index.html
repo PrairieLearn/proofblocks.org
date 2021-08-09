@@ -54,13 +54,26 @@
   .researchrow {
     border-bottom: 1px solid #E1E1E1;
     padding: 20px 5px;
-    display:flex;
+    /* display:flex; */
     /* float:left; */
-    /* flex-wrap:wrap;
-    flex-direction: row; */
-    flex:2 1;
-    flex-flow: column;
-    flex-direction: row;
+    /* flex-wrap:wrap; */
+    /* flex-direction: row; */
+    /* flex:2 1; */
+    /* flex-flow: column; */
+    /* flex-direction: row; */
+    overflow: hidden;
+  }
+
+  .researchfigure {
+    margin: 10px;
+    float: left;
+  }
+
+  .researchdetails {
+    margin: 10px;
+    max-width: calc(100% - 340px);
+    min-width: 250px;
+    float:left;
   }
 
 </style>
@@ -81,10 +94,10 @@
     <h2>Proof Blocks &blacktriangleright; Research</h2>
 
     <div class="researchrow">
-      <span>
+      <span class="researchfigure">
         <img src="../images/example-dag.png" style="width:300px;"/>
       </span>
-      <span>
+      <span class="researchdetails">
         <h5>Implementation</h5>
         When consdivucting a problem, the insdivuctor
         specifies the dependency graph of the lines of the proof, so that
@@ -108,12 +121,12 @@
     </div>
 
     <div class="researchrow">
-      <span>
+      <span class="researchfigure">
         <img src="../images/information-curves.png" style="width:300px;"/>
       </span>
-      <span>
+      <span class="researchdetails">
         <h5>Proof Blocks Problems as Exam Questions</h5>
-        We used Proof Blocks in a discrete math course with hundreds of students. Our psychomedivic analysis
+        We used Proof Blocks in a discrete math course with hundreds of students. Our psychometric analysis
         showed that Proof Blocks problems gave substantial information about student knowledge while being easier
         than written proofs. Student surveys showed that students felt that Proof Blocks were easy to use and gave them an
         authentic proof-writing experience.
@@ -135,12 +148,12 @@
     </div>
 
     <div class="researchrow">
-      <span>
+      <span class="researchfigure">
         <div style="width:300px;display: flex;justify-content:center;">
           <img src="../images/Anonymous-lambda.svg" style="width:200px;"/>
         </div>
       </span>
-      <span>
+      <span class="researchdetails">
         <h5>Problem Autogeneration</h5>
         We're working on generating problems that look like the informal, natural language proofs that
         students are used to, but generated from a formal proof assistant such as <a href="https://coq.inria.fr/">Coq</a>.
@@ -150,13 +163,14 @@
         Coming soon!
       </span>
     </div>
-    <hr/>
 
     <div class="researchrow">
-      <span>
-        <img src="../images/brain.png" style="width:300px;"/>
+      <span class="researchfigure">
+        <div style="width:300px;display: flex;justify-content:center;">
+          <img src="../images/brain.png" style="width:250px;"/>
+        </div>
       </span>
-      <span>
+      <span class="researchdetails">
         <h5>Proof Blocks for Learning</h5>
         <a href="https://dl.acm.org/doi/abs/10.1145/3141880.3141895">Research</a>
         has shown that in some situations, Parsons Problems can help students to learn as much
@@ -167,7 +181,6 @@
         Coming soon!
       </span>
     </div>
-    <hr/>
 
   </div>
 
